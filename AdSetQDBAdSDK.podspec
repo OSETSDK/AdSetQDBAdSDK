@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AdSetQDBAdSDK"
-  s.version      = "7.7.4.28"
+  s.version      = "7.7.4.29"
   s.summary      = "AdSet广告对接聚合类"
   s.description  = <<-DESC
                       AdSetQDBAdSDK 是一个专业的广告聚合SDK，提供高效的广告展示和收益优化功能。
@@ -23,7 +23,67 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'AdSetQDB.framework'
   
   # 系统框架依赖
-  s.frameworks = "Foundation", "UIKit"
+   s.frameworks = [
+    # 广告和追踪相关
+    'AdSupport',
+    'AppTrackingTransparency',
+    
+    # 音视频和媒体
+    'AVFoundation',
+    'CoreMedia',
+    'CoreAudio',  # 您没列但可能需要
+    
+    # 图形和界面
+    'CoreGraphics',
+    'CoreImage',
+    'QuartzCore',
+    'UIKit',
+    
+    # 网络和通信
+    'CoreTelephony',
+    'SystemConfiguration',
+    'Network',  # iOS 12+，推荐添加
+    
+    # 位置和传感器
+    'CoreLocation',
+    'CoreMotion',
+    
+    # 基础框架
+    'Foundation',
+    'CoreFoundation',
+    'CoreServices',
+    'MobileCoreServices',
+    
+    # 其他功能
+    'DeviceCheck',
+    'ImageIO',
+    'JavaScriptCore',
+    'SafariServices',
+    'StoreKit',
+    'WebKit'
+  ]
+  
+  # ========== 系统库依赖 ==========
+  s.libraries = [
+    # 压缩库
+    'z',
+    'bz2',
+    
+    # 数据库
+    'sqlite3',
+    
+    # 网络和解析
+    'resolv',
+    'xml2',
+    
+    # C++支持
+    'c++',
+    'c++abi',
+    
+    # 字符编码
+    'iconv'
+  ]
+  
   
   # 资源文件
   s.resources = "AdSetQDB_sdk.bundle"
