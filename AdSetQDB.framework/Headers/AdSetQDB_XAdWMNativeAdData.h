@@ -11,7 +11,7 @@
 typedef NS_ENUM(NSInteger, WMNativeAdType) {
     SINGLE_IMAGE, // 单图
     GROUP_IMAGE, // 多图
-    VIDEO, // 视频广告
+    WMVIDEO, // 视频广告
 };
 
 typedef NS_ENUM(NSInteger, WMAdInteractionType) {
