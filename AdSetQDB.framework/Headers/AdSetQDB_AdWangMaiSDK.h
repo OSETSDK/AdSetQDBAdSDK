@@ -15,7 +15,6 @@ FOUNDATION_EXPORT const unsigned char AdWangMaiSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AdSetQDB_AdWangMaiSDK/PublicHeader.h>
 
-
 #import <AdSetQDB/AdSetQDB_XAdWangMaiSDk.h>
 #import <AdSetQDB/AdSetQDB_XAdSplashAd.h>
 #import <AdSetQDB/AdSetQDB_XAdSplashDelegate.h>
@@ -32,7 +31,3 @@ FOUNDATION_EXPORT const unsigned char AdWangMaiSDKVersionString[];
 #import <AdSetQDB/AdSetQDB_XAdNativeAd.h>
 #import <AdSetQDB/AdSetQDB_XAdNativeAdResponse.h>
 #import <AdSetQDB/AdSetQDB_XAdNativeDelegete.h>
-
-#import <AdSetQDB/AdSetQDB_XAdWMNativeAd.h>
-#import <AdSetQDB/AdSetQDB_XAdWMNativeAdData.h>
-#import <AdSetQDB/AdSetQDB_XAdWMNativeAdDelegate.h>
